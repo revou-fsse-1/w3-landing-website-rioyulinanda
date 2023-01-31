@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A web application for fanpage of AFC Richmond"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Rio Yulinanda" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AFC Richmond Fanpage</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="/assets/afcrichmond-logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <a href="index.html"
+          ><img
+            class="logo"
+            src="assets/afcrichmond-logo.png"
+            alt="logo afcrichmond"
+          />
+        </a>
+
+        <div class="navigation-right">
+          <ul class="menu">
+            <li>
+              <a href="index.html">home</a>
+            </li>
+            <li>
+              <a href="/gallery/index.html">gallery</a>
+            </li>
+            <li>
+              <a href="/shop/index.html">shop</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="afcrichmondphoto">
+        <h2>AFC Richmond</h2>
+        <div class="grid-container">
+          <div id="item-1">
+            <img src="/assets/tedlasso2.jpg" alt="afcrichmondkeycharacter." />
+          </div>
+          <div id="item-2">
+            <img src="/assets/tedlasso3.jpg" alt="afcrichmondkeyplayer." />
+          </div>
+          <div id="item-2">
+            <img src="/assets/tedlasso4.jpg" alt="afcrichmondsquad." />
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>About AFC Richmond</h2>
+        <p>
+          AFC Richmond is a fictional English professional association football
+          club based in Richmond upon Thames, London. They currently compete in
+          the Premier League, the first tier of the English football league
+          system, following promotion in 2021.
+        </p>
+      </section>
+      <section>
+        <h2>AFC Richmond Promotional Video</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/QgNkM0vQa84"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section>
+        <h2>Join our fanbase to get discount on ticket match!</h2>
+        <form action="#">
+          <fieldset>
+            <legend>personal data:</legend>
+            <div>
+              <label for="fullname">your name, lads</label>
+              <input id="fullname" type="text" required />
+            </div>
+            <div>
+              <label for="email">your email, lads</label>
+              <input id="email" type="text" required />
+            </div>
+            <div>
+              <p>are you currently living in Richmond?</p>
+              <input
+                type="radio"
+                id="yeah"
+                name="inrichmond"
+                value="millenials"
+              />
+              <label for="yeah">yeah!</label>
+              <input type="radio" id="nope" name="inrichmond" value="gen.z" />
+              <label for="nope">nope!</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>another thing lads</legend>
+            <div>
+              <p>tell us what you'd like about AFC Richmond, lads.</p>
+              <textarea rows="3" style="width: 147px; height: 52px"></textarea>
+            </div>
+            <div>
+              <button type="submit">are you done, lads?</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
