@@ -1,147 +1,167 @@
 body {
   margin: 0;
-  background-color: #252c5f;
-}
-
-.announcement {
-  display: inline-block;
-  position: sticky;
-  height: 100%;
-  text-align: center;
-  width: 100%;
-  background: whitesmoke;
-  color: #252c5f;
-  font-family: "Courier New";
-  margin: 0;
-  padding: 0;
-  vertical-align: middle;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.announcement a {
-  color: black;
-  font-family: "Courier New";
-}
-
-.announcement a:hover {
-  color: #252c5f;
-}
-
-.container {
-  width: 99vw;
-  height: 99vh;
-
-  font-family: "courier new";
-  font-weight: bold;
-  font-size: 20px;
-
-  display: grid;
-
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 130px 1fr 1fr 140px;
-
-  gap: 20px;
-
-  padding: 30px;
-  box-sizing: border-box;
-}
-
-.container div {
-  padding: 10px;
-  border: 3px solid black;
-  border-radius: 5px;
   background-color: whitesmoke;
+  font-family: "Candara Light";
+  font-size: 15px;
+  font-weight: 400;
 }
 
-.header {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  position: sticky;
+#navigation {
+  width: 100%;
+  position: relative;
 }
 
-.content-large {
-  grid-row-start: 2;
-  grid-row-end: span 2;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-.footer {
-  grid-column: 1 / span 3;
-}
-
-.logo {
-  width: 90px;
-  height: 90px;
+.navigation-logo {
+  width: 300px;
+  height: 300px;
   position: absolute;
   left: 50%;
-  top: 5px;
+  top: 0;
   content: "";
-  margin-left: -50px;
+  margin-left: -150px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.navigation-menubar {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.navigation-menubar ul {
   margin: 0;
-  gap: 10px;
-  text-align: center;
-  margin-left: -10px;
-  margin-top: 90px;
+  padding: 0;
+  list-style: none;
+  text-align: right;
 }
 
-li {
+.navigation-menubar ul li {
+  float: none;
   display: inline-block;
+}
+
+.navigation-menubar ul li:nth-child(1) {
+  float: left;
+}
+
+.navigation-menubar ul li:nth-child(2) {
+  float: left;
+}
+
+.navigation-menubar ul li a {
+  color: #181818;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  padding-top: 40px;
 }
 
 li a {
-  text-decoration: none;
-  width: 50px;
-  display: inline;
-  padding: 5px;
-  text-align: center;
-  color: #252c5f;
+  position: relative;
+  display: block;
+  cursor: pointer;
 }
 
-li a:hover {
-  color: whitesmoke;
-  box-shadow: inset 150px 0 0 0 #252c5f;
+li a:before,
+li a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 72%;
+  margin-top: -0.5px;
+  background: #fff;
+}
+
+li a:before {
+  left: -2.5px;
+}
+li a:after {
+  right: 2.5px;
+  background: #fff;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+li a:hover:before {
+  background: #181818;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+li a:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+.collagepicture {
+  width: 99vw;
+  height: 100vh;
+
+  display: grid;
+
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: 10px 10px;
+}
+
+.collagepicture div {
+  display: grid;
+  left: 0;
+  top: 0;
+  margin-top: 20px;
+}
+
+.smallpicture1 {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.bigpicture2 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.bigpicture1 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.smallpicture2 {
+  grid-row-start: 1;
+  grid-column-start: 3;
 }
 
 .photo1 {
-  object-fit: fill;
+  object-fit: contain;
   width: 100%;
-  max-height: 100%;
 }
 
-.photo2 {
-  object-fit: fill;
+.photo4 {
+  object-fit: contain;
   width: 100%;
-  max-height: 100%;
+  margin-top: 140px;
 }
 
 .photo3 {
-  object-fit: fill;
+  object-fit: contain;
   width: 100%;
-  max-height: 100%;
+  height: 180%;
 }
 
-.content-form {
-  grid-column-end: 3;
-  margin: 0;
+.photo2 {
+  object-fit: contain;
+  width: 100%;
+  margin-top: -20px;
+  height: 108%;
 }
 
-h2 {
-  text-align: center;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-button {
-  color: whitesmoke;
-  background-color: black;
-  font-family: "Courier New";
-  font-weight: bold;
-  border-radius: 5px;
+.content {
+  display: grid;
+  grid-template-columns: 50fr 50fr;
+  align-items: center;
 }

@@ -4,91 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AFC Richmond Unofficial Fan Page</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="icon" href="./assets/afcrichmond-logo.png" type="image/x-icon" />
+    <title>mebel</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body>
-    <div class="announcement">
-      <p>
-        we have several items that are actually on sale!
-        <a href="./shop/index.html">please kindly check here, lads!</a>
-      </p>
-    </div>
-
-    <div class="container">
-      <div class="header">
-        <a href="index.html"
-          ><img
-            class="logo"
-            src="./assets/afcrichmond-logo.png"
-            alt="logoafcrichmond"
-          />
-
-          <ul>
-            <li>
-              <a href="./index.html">home</a>
-            </li>
-            <li>
-              <a href="./gallery/index.html">gallery</a>
-            </li>
-            <li>
-              <a href="./shop/index.html">shop</a>
-            </li>
-          </ul>
+    <div class="navigation">
+      <div class="navigation-logo">
+        <a href="./index.html">
+          <img class="logo" src="./assets/mebel-logo.png" alt="logomebel" />
         </a>
       </div>
-      <div class="content-large">
-        <img
-          class="photo1"
-          src="./assets/coachlassoletter.png"
-          alt="squadphoto"
-        />
+      <div class="navigation-menubar">
+        <ul>
+          <li>
+            <a href="./index.html">home</a>
+          </li>
+          <li>
+            <a href="./blog/index.html">blog</a>
+          </li>
+          <li>
+            <a href="./collection/index.html">collection</a>
+          </li>
+          <li>
+            <a href="./contact/index.html">contact</a>
+          </li>
+        </ul>
       </div>
-      <div class="content-small-1">
-        <img class="photo2" src="./assets/richmondgoal3.jpeg" alt="keyactor" />
+    </div>
+
+    <div class="collagepicture">
+      <div class="smallpicture1">
+        <img class="photo1" src="./assets/furniture2.jpg" alt="collage1" />
       </div>
-      <div class="content-small-2">
-        <img class="photo3" src="./assets/tedlasso4.jpg" alt="keyplayer" />
+      <div class="bigpicture1">
+        <img class="photo2" src="./assets/furniture3.jpg" alt="collage2" />
       </div>
-      <div class="content-form">
-        <h2>Join our fanbase to get discount on ticket match!</h2>
+      <div class="smallpicture2">
+        <img class="photo3" src="./assets/bedroom3.jpg" alt="collage3" />
+      </div>
+      <div class="bigpicture2">
+        <img class="photo4" src="./assets/bathroom1.jpg" alt="collage4" />
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="newslettersection">
+        <h2>join our newsletter!</h2>
+        <p>
+          we promise it wouldn't bother your email, it contains our newest
+          product, including the promo code, which will give you a discount
+        </p>
         <form action="#">
           <fieldset>
-            <legend>personal data:</legend>
+            <legend>please add your email:</legend>
             <div>
-              <label for="fullname">your name, lads</label>
-              <input id="fullname" type="text" required />
+              <label for="emailaddress"></label>
+              <input id="emailaddress" type="text" required />
             </div>
             <div>
-              <label for="email">your email, lads</label>
-              <input id="email" type="text" required />
-            </div>
-            <div>
-              <p>are you currently living in Richmond?</p>
-              <input
-                type="radio"
-                id="yeah"
-                name="inrichmond"
-                value="millenials"
-              />
-              <label for="yeah">yeah!</label>
-              <input type="radio" id="nope" name="inrichmond" value="gen.z" />
-              <label for="nope">nope!</label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>another thing lads</legend>
-            <div>
-              <p>tell us what you'd like about AFC Richmond, lads.</p>
-              <textarea rows="3" style="width: 147px; height: 52px"></textarea>
-            </div>
-            <div>
-              <button type="submit">are you done, lads?</button>
+              <button type="submit">submit</button>
             </div>
           </fieldset>
         </form>
+      </div>
+
+      <div class="officeimage">
+        <h2>our office</h2>
+        <p>884 Coffee Ave. Ridgewood, NY 11385</p>
+        <img src="./assets/officeimage.jpg" alt="office" />
       </div>
     </div>
   </body>
