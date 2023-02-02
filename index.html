@@ -9,20 +9,26 @@
   </head>
 
   <body>
+    <div class="announcement">
+      <p>
+        we have several collection that discount, please kindly check!
+        <a href="./collection/index.html">click here!</a>
+      </p>
+    </div>
     <div class="navigation">
-      <div class="navigation-logo">
-        <a href="./index.html">
-          <img class="logo" src="./assets/mebel-logo.png" alt="logomebel" />
-        </a>
-      </div>
-      <div class="navigation-menubar">
-        <ul>
+      <div>
+        <ul class="navigation-menubar">
           <li>
             <a href="./index.html">home</a>
           </li>
           <li>
             <a href="./blog/index.html">blog</a>
           </li>
+          <div class="navigation-logo">
+            <a href="./index.html">
+              <img class="logo" src="./assets/mebel-logo.png" alt="logomebel" />
+            </a>
+          </div>
           <li>
             <a href="./collection/index.html">collection</a>
           </li>
@@ -57,10 +63,18 @@
         </p>
         <form action="#">
           <fieldset>
-            <legend>please add your email:</legend>
-            <div>
-              <label for="emailaddress"></label>
+            <legend>please add your details:</legend>
+            <div class="form-group">
+              <label for="name">name</label>
+              <input id="name" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="emailaddress">email</label>
               <input id="emailaddress" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="mobilenumber">mobile</label>
+              <input id="mobilenumber" type="text" required />
             </div>
             <div>
               <button type="submit">submit</button>
