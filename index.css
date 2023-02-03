@@ -290,3 +290,8 @@ li a:hover:after {
   outline: none;
   box-shadow: 0 0 0 0.8rem whitesmoke (230, 125, 34, 0.514);
 }
+
+.radioselection p {
+  font-size: 20px;
+  margin-top: 3px;
+}
