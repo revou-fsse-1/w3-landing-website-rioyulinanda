@@ -249,7 +249,7 @@ li a:hover:after {
   display: block;
   font-size: 20px;
   font-weight: 50px;
-  margin-bottom: 1.2rem;
+  /* margin-bottom: 1.2rem; */
 }
 
 .cta-form input,
@@ -301,6 +301,7 @@ li a:hover:after {
 .radioselection .selector {
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 
 .radioselection .selector > * {
