@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mebel</title>
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link rel="icon" href="./assets/mebel-logo1.png" type="image/x-icon" />
   </head>
 
   <body>
@@ -14,6 +16,12 @@
         we have several collection that discount, please kindly check!
         <a href="./collection/index.html">click here!</a>
       </p>
+    </div>
+    <div class="navigation-mobile">
+      <img
+        src="https://user-images.githubusercontent.com/2970318/209647125-dc41103d-c545-4e2e-b89b-099fbfcde702.svg"
+        alt="hamburgericon"
+      />
     </div>
     <div class="navigation">
       <div>
@@ -41,7 +49,7 @@
 
     <div class="collagepicture">
       <div class="smallpicture1">
-        <img class="photo1" src="./assets/furniture2.jpg" alt="collage1" />
+        <img class="photo1" src="./assets/furniture1.jpg" alt="collage1" />
       </div>
       <div class="bigpicture1">
         <img class="photo2" src="./assets/furniture3.jpg" alt="collage2" />
@@ -52,42 +60,93 @@
       <div class="bigpicture2">
         <img class="photo4" src="./assets/bathroom1.jpg" alt="collage4" />
       </div>
-    </div>
-
-    <div class="content">
-      <div class="newslettersection">
-        <h2>join our newsletter!</h2>
+      <div class="textbox1">
         <p>
-          we promise it wouldn't bother your email, it contains our newest
-          product, including the promo code, which will give you a discount
+          our works are based on interior design and furniture design, but we
+          specialized in monochromatic themes. we started this very small, and
+          up to now we grow bigger day by day, our main mission is to introduce
+          to everyone out there that black and white could give colorful in
+          every aspect.
         </p>
-        <form action="#">
-          <fieldset>
-            <legend>please add your details:</legend>
-            <div class="form-group">
-              <label for="name">name</label>
-              <input id="name" type="text" required />
-            </div>
-            <div class="form-group">
-              <label for="emailaddress">email</label>
-              <input id="emailaddress" type="text" required />
-            </div>
-            <div class="form-group">
-              <label for="mobilenumber">mobile</label>
-              <input id="mobilenumber" type="text" required />
-            </div>
-            <div>
-              <button type="submit">submit</button>
-            </div>
-          </fieldset>
-        </form>
-      </div>
-
-      <div class="officeimage">
-        <h2>our office</h2>
-        <p>884 Coffee Ave. Ridgewood, NY 11385</p>
-        <img src="./assets/officeimage.jpg" alt="office" />
       </div>
     </div>
+
+    <section class="section-cta" id="cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">join our newsletter</h2>
+            <p class="cta-text">
+              we guarantee this newsletter won't bother you. it will contain our
+              newest products and information on several discount products.
+              also, the first time you sign up, you will receive a promo code
+              for a 25% discount for all items. enjoy!
+            </p>
+            <div class="">
+              <form name="sign up" netlify class="cta-form">
+                <div>
+                  <label for="name">full Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="john doe"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="john_doe@gmail.com"
+                    required
+                  />
+                </div>
+
+                <div class="radioselection">
+                  <p>are you living in new york area?</p>
+                  <input
+                    type="checkbox"
+                    id="yes"
+                    name="isnewyork"
+                    value="millenials"
+                  />
+                  <label for="yes">yes</label>
+                  <input
+                    type="checkbox"
+                    id="no"
+                    name="isnewyork"
+                    value="genz"
+                  />
+                  <label for="no">no</label>
+                </div>
+                <div>
+                  <label for="select-where">where did you hear from us?</label>
+                  <select id="select-where" name="select-where" required>
+                    <option value="">choose one option</option>
+                    <option value="friends">friends</option>
+                    <option value="family">family</option>
+                    <option value="podcast">podcast</option>
+                    <option value="youtube">youtube</option>
+                    <option value="marketplace">marketplace</option>
+                  </select>
+                </div>
+                <div class="button-container">
+                  <button class="button" type="submit">sign up now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="cta-img-box">
+            <h2>our office</h2>
+            <p>884 Coffee Ave. Ridgewood, NY 11385</p>
+            <img src="./assets/officeimage.jpg" />
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

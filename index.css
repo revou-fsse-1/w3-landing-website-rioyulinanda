@@ -17,6 +17,7 @@ body {
   align-items: center;
   justify-content: center;
   position: fixed;
+  top: 0;
   height: 4%;
   text-align: center;
   width: 100%;
@@ -35,6 +36,10 @@ body {
 
 .announcement a:hover {
   color: whitesmoke;
+}
+
+.navigation-mobile {
+  display: none;
 }
 
 #navigation {
@@ -122,7 +127,21 @@ li a:hover:after {
   display: grid;
   left: 0;
   top: 0;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+}
+
+.textbox1 {
+  color: #181818;
+  font-family: "Candara Light";
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: -4;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 200px;
 }
 
 .smallpicture1 {
@@ -162,74 +181,112 @@ li a:hover:after {
 .photo3 {
   object-fit: contain;
   width: 100%;
-  height: 180%;
+  height: 210%;
 }
 
 .photo2 {
   object-fit: contain;
   width: 100%;
-  margin-top: -20px;
-  height: 108%;
+  margin-top: -30px;
 }
 
-.content {
+.section-cta {
+  padding: 100px;
+  margin-top: 250px;
+}
+
+.cta {
   display: grid;
-  grid-template-columns: 50fr 50fr;
-  align-items: center;
-  margin: 50px;
-  gap: 10px;
-  margin-top: 300px;
-  border: 3px solid black;
+  grid-template-columns: 2fr 2fr;
+  /* background-color: #181818; */
+  box-shadow: 0 2.4rem 4.8rem whitesmoke (0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #181818, #181818);
+  overflow: hidden;
 }
 
-.content div {
-  padding: 5px;
+.cta-text-box {
+  color: whitesmoke;
+  padding: 50px 50px 0;
+}
+
+.cta .heading-secondary {
+  color: whitesmoke;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.cta-text {
+  font-size: 20px;
+  line-height: 2;
+  margin-bottom: 2rem;
+  color: whitesmoke;
+  text-align: justify;
+}
+
+.cta-img-box {
+  padding: 50px 100px 30px;
+  font-family: "Candara Light";
+  color: whitesmoke;
+}
+
+.cta-img-box h2 {
+  text-align: center;
+}
+
+.cta-img-box p {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 20px;
+  font-weight: 50px;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 90%;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Candara Light";
+  color: #181818;
+  border: none;
+  border-radius: 5px;
+  background-color: #fdf2e9;
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
+}
+
+.button-container {
+  align-self: end;
+}
+
+.button {
+  padding: 10px;
   border-radius: 5px;
   left: 0;
   top: 0;
-  margin-top: 10px;
-}
-
-.newslettersection {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.newslettersection h2 {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-.newslettersection p {
-  margin-bottom: 10px;
-}
-
-.officeimage {
-  align-items: center;
-}
-
-.officeimage h2 {
-  text-align: center;
-}
-
-.officeimage p {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-button {
-  background-color: #181818;
-  color: whitesmoke;
-  border-radius: 6px;
+  margin-bottom: 100px;
+  color: #181818;
+  background-color: #fdf2e9;
   font-family: "Candara Light";
-  font-weight: bold;
-  padding: 5px;
+  /* font-weight: bold; */
+  font-size: 20px;
 }
 
-.form-group {
-  width: 50%;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  gap: 20px;
+.cta-form input::placeholder {
+  color: #181818;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem whitesmoke (230, 125, 34, 0.514);
 }
