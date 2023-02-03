@@ -256,6 +256,11 @@
     background-color: #fdf2e9;
     font-family: "Candara Light";
     font-size: 15px;
-    margin-right: 60px;
+    margin-right: 100px;
+    margin-top: 0;
+  }
+
+  .radioselection p {
+    font-size: 15px;
   }
 }
