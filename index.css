@@ -292,8 +292,25 @@ li a:hover:after {
 }
 
 .radioselection p {
+  display: flex;
+  flex-direction: column;
   font-size: 20px;
   margin-top: 3px;
+}
+
+.radioselection .selector {
+  display: flex;
+  align-items: center;
+}
+
+.radioselection .selector > * {
+  /* align-items: center; */
+  align-self: center;
+}
+
+.radioselection .selector input {
+  width: 16px;
+  /* align-items: center; */
 }
 
 footer {
