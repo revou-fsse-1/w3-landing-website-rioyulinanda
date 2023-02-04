@@ -16,7 +16,7 @@ this is a simple landing website made using HTML & CSS. thanks
 
 ## visit my website & other links
 
-- Website: [rioyulinanda](https://w3-landing-website-rioyulinanda.netlify.app/)
+- Website: [rioyulinanda](https://mebel-bw.netlify.app/)
 - LinkedIn: [rioyulinanda](https://id.linkedin.com/in/rio-y-kurniawan-55293172)
 - GitHub: [rioyulinanda](https://github.com/rioyulinanda)
 
